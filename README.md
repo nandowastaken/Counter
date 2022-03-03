@@ -1,0 +1,1 @@
+In order to practice Javascript, I made this website, it is a simple click counter.
