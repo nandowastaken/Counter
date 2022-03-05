@@ -13,6 +13,11 @@
     align-items: center;
 
     gap: 20px;
+
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .text {
@@ -20,33 +25,48 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
-    
     gap: 30px;
 }
+
+#title, #number {
+    font-family: "Open-sans", sans-serif;
+    color: hsl(209, 61%, 16%);
+    
+}
+
+#title {
+    font-size: 64px;
+}
+
+#number {
+    font-size: 96px;
+}
+
 
 .buttons {
     display: flex;
     justify-content: center;
     align-items: center;
-
     gap: 20px;
 
-}
-
-#title, #number {
-    font-family: "Open-sans", sans-serif;
-    color: hsl(209, 61%, 16%);;
 }
 
 #increase, #reset, #decrease {
     font-family: "Roboto", sans-serif;
     cursor: pointer;
     border: solid;
+    color: hsl(209, 61%, 16%);
     border-color:hsl(209, 61%, 16%);
 
     font-size: 14px;
     padding: 5px 13px;
     border-width: 2px;
     border-radius: 8px;
+
+    transition: color .7s;
+}
+
+#increase:hover, #reset:hover, #decrease:hover {
+    color: white;
+    background-color: #222;
 }
